@@ -4,7 +4,6 @@
       v-for="category in props.categories"
       :key="category.category_id"
       :category="category"
-      :parent="category"
       @click.stop="useCategoriesStore().selectedCategory = category"
     />
   </div>
